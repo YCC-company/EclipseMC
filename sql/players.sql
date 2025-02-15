@@ -8,6 +8,6 @@ CREATE TABLE players (
     world VARCHAR(32) NOT NULL,
     health INT NOT NULL DEFAULT 20,
     exp INT NOT NULL DEFAULT 0,
-    inventory JSON NOT NULL,
+    inventory JSON NOT NULL, -- アイテムの個数もJSONで管理
     last_login TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
